@@ -5,4 +5,5 @@
 <p>Price: <%= @dish.price %></p>
 <p>In stock: <%= @dish.in_stock %></p>
 
-<p><%= link_to "Update Dish", "/dishes/#{@dish.id}/edit" %></p>
+<p><%= link_to "Update Dish", "/dishes/#{@dish.id}/edit" %>/
+  <%= link_to 'Delete Dish', "/dishes/#{@dish.id}", method: :delete%></p>

@@ -4,9 +4,11 @@ class Foodtruck < ApplicationRecord
   validates :checked_in, inclusion: [true, false]
   validates_presence_of :food_type
 
-  has_many :dishes
-end
+  has_many :dishes, dependent: :destroy
 
-def self.order_by_create
-  order(created_at: :asc)
+
+  def self.order_by_create
+    order(created_at: :asc)
+  end
+
 end

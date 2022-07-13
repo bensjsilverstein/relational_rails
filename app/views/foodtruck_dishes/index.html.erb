@@ -2,10 +2,18 @@
 
 <a href="/foodtrucks">Foodtrucks</a>
 <a href="/dishes">Dishes</a>
+
 <% @dishes.each do |dish| %>
   <p><%= dish.dish_name %></p>
   <p><%= dish.price %></p>
   <p><%= dish.in_stock %></p>
+<% end %>
+
+
+<%= form_with url: "/foodtrucks/#{@foodtruck.id}/dishes?cost=#{params[:cost]}", method: :get, local: true, skip_enforcing_utf8: true do |form| %>
+  <%= form.label :cost, "Show dishes less than this price:" %>
+  <%= form.number_field :cost %>
+  <%= form.submit "Show dishes", name: nil %>
 <% end %>
 
 <p><%= link_to "Sort Alphabetically", "/foodtrucks/#{@foodtruck.id}/dishes?sort=alpha"%></p>
