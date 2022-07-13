@@ -1,0 +1,11 @@
+<%= form_with url: "/foodtrucks", method: :post, local: true do |form| %>
+  <%= form.label :name %>
+  <%= form.text_field :name %>
+  <%= form.label :num_workers %>
+  <%= form.number_field :num_workers %>
+  <%= form.label :checked_in %>
+  <%= form.select :checked_in, [['Checked in', true], ['Not checked in', false]] %>
+  <%= form.label :food_type %>
+  <%= form.text_field:food_type %>
+  <%= form.submit 'Create Foodtruck' %>
+<% end %>

@@ -1,0 +1,11 @@
+<h1>Create new dish for <%= @foodtruck.name %></h1>
+
+<%= form_with url: "/foodtrucks/#{@foodtruck.id}/dishes", method: :post, local: true do |form| %>
+  <p><%= form.label :dish_name %>
+  <%= form.text_field :dish_name %></p>
+  <p><%= form.label :price %>
+  <%= form.number_field :price %></p>
+  <p><%= form.label :in_stock %>
+  <%= form.select :in_stock, [['In stock', true], ['Not in stock', false]] %></p>
+  <p><%= form.submit 'Create Dish' %></p>
+<% end %>

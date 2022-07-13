@@ -1,0 +1,11 @@
+<h1>Update Dish</h1>
+
+<%= form_with url: "/dishes/#{@dish.id}", method: :patch, local: true do |form| %>
+  <p><%= form.label :dish_name %>
+  <%= form.text_field :dish_name, placeholder: "#{@dish.dish_name}" %></p>
+  <p><%= form.label :price %>
+  <%= form.number_field :price, placeholder: "#{@dish.price}" %></p>
+  <p><%= form.label :in_stock %>
+  <%= form.select :in_stock, [['In stock', true], ['Not in stock', false]] %></p>
+  <p><%= form.submit 'Update Dish' %></p>
+<% end %>

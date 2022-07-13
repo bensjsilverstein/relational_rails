@@ -1,5 +1,12 @@
+<%= link_to 'New Foodtruck', '/foodtrucks/new' %>
+
+<a href="/foodtrucks">Foodtrucks</a>
+<a href="/dishes">Dishes</a>
+
 <h1>Foodtrucks</h1>
 
 <% @foodtrucks.each do |foodtruck|%>
-  <h3><%= foodtruck.name %></h3>
+  <p id="foodtruck-<%= foodtruck.id %>"> <%= foodtruck.name %> <%= foodtruck.created_at %>
+    <%= link_to "Edit", "/foodtrucks/#{foodtruck.id}/edit" %>
+  </p>
 <% end %>
