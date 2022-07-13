@@ -1,5 +1,11 @@
-<% @dishes.each do |dish|%>
-  <p><%= dish.dish_name %></p>
-  <p><%= dish.price %></p>
-  <p><%= dish.in_stock %></p>
+<a href="/foodtrucks">Foodtrucks</a>
+<a href="/dishes">Dishes</a>
+
+
+<h1>Dishes</h1>
+
+<% @dishes.in_stock?.each do |dish|%>
+  <p id="dish-<%= dish.id %>"> >Dish: <%= dish.dish_name %> >Price: <%= dish.price %> >In stock? <%= dish.in_stock %>
+  <%= link_to "Edit", "/dishes/#{dish.id}/edit" %>
+  </p>
 <% end %>

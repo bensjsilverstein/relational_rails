@@ -6,3 +6,7 @@ class Foodtruck < ApplicationRecord
 
   has_many :dishes
 end
+
+def self.order_by_create
+  order(created_at: :asc)
+end

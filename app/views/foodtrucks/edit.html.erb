@@ -1,0 +1,13 @@
+<h1>Update Foodtruck</h1>
+
+<%= form_with url: "/foodtrucks/#{@foodtruck.id}", method: :patch, local: true do |form| %>
+  <p><%= form.label :name %>
+  <%= form.text_field :name, placeholder: "#{@foodtruck.name}" %></p>
+  <p><%= form.label :num_workers %>
+  <%= form.number_field :num_workers, placeholder: "#{@foodtruck.num_workers}" %></p>
+  <p><%= form.label :checked_in %>
+  <%= form.select :checked_in, [['Checked in', true], ['Not checked in', false]] %></p>
+  <p><%= form.label :food_type %>
+  <%= form.text_field :food_type, placeholder: "#{@foodtruck.food_type}" %></p>
+  <p><%= form.submit 'Update Foodtruck' %></p>
+<% end %>
