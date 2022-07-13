@@ -3,7 +3,7 @@ require 'rails_helper'
 RSpec.describe 'New Foodtruck' do
   describe 'As a visitor' do
     describe 'When I visit the new foodtruck form by clicking a link on the index' do
-      it 'I can create a new foodtruck' do
+      it 'can create a new foodtruck' do
         visit '/foodtrucks'
 
         click_link 'New Foodtruck'

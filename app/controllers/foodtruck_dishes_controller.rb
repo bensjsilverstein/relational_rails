@@ -1,8 +1,11 @@
 class FoodtruckDishesController < ApplicationController
   def index
     @foodtruck = Foodtruck.find(params[:id])
+    @dishes = @foodtruck.dishes
     if params[:sort] == "alpha"
       @dishes = @foodtruck.dishes.alphabetical
+    elsif params[:cost]
+      @dishes = @foodtruck.dishes.where("price < #{params[:cost]}")
     else
       @dishes = @foodtruck.dishes
     end

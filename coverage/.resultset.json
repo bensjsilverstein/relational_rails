@@ -279,65 +279,14 @@
           null,
           1,
           0,
+          null,
+          null,
           null
         ]
       },
       "/Users/bensilverstein/turing/2Module/projects/relational_rails/app/models/application_record.rb": {
         "lines": [
           1,
-          1,
-          null
-        ]
-      },
-      "/Users/bensilverstein/turing/2Module/projects/relational_rails/app/controllers/foodtrucks_controller.rb": {
-        "lines": [
-          1,
-          1,
-          0,
-          null,
-          null,
-          1,
-          4,
-          null,
-          null,
-          1,
-          null,
-          null,
-          1,
-          0,
-          null,
-          null,
-          null,
-          null,
-          0,
-          null,
-          null,
-          1,
-          0,
-          null,
-          null,
-          1,
-          0,
-          0,
-          0,
-          0,
-          null,
-          null,
-          1,
-          1,
-          0,
-          null,
-          null,
-          1,
-          1,
-          0,
-          null,
-          null,
-          null
-        ]
-      },
-      "/Users/bensilverstein/turing/2Module/projects/relational_rails/app/controllers/application_controller.rb": {
-        "lines": [
           1,
           null
         ]
@@ -356,49 +305,53 @@
           null,
           null,
           1,
-          0,
+          1,
           null,
           null,
           null
         ]
       },
-      "/Users/bensilverstein/turing/2Module/projects/relational_rails/app/controllers/foodtruck_dishes_controller.rb": {
+      "/Users/bensilverstein/turing/2Module/projects/relational_rails/app/controllers/dishes_controller.rb": {
         "lines": [
           1,
           1,
           1,
-          1,
-          0,
-          null,
-          1,
-          null,
           null,
           null,
           1,
-          0,
+          2,
           null,
           null,
           1,
           0,
+          null,
+          null,
+          1,
+          0,
+          0,
           0,
           0,
           null,
           null,
           1,
           1,
+          1,
+          null,
+          null,
+          1,
+          1,
           0,
           null,
-          null,
-          null,
-          null,
-          null,
-          null,
-          null,
-          null,
+          null
+        ]
+      },
+      "/Users/bensilverstein/turing/2Module/projects/relational_rails/app/controllers/application_controller.rb": {
+        "lines": [
+          1,
           null
         ]
       }
     },
-    "timestamp": 1657742586
+    "timestamp": 1657754355
   }
 }
